@@ -1,0 +1,7 @@
+main.tf
+backend.hcl
+.terraform.lock.hcl
+.terraform/
+terraform/generated/
+terraform/build/
+.idea/
