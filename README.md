@@ -18,6 +18,8 @@ Can be deployed as cloud function and scheduled workflow
 terraform apply -var "webhook=https://hooks.slack.com/services/TMEDJTBJ4/gfdsfggsdfg/dfhgdfghf" -var "projects=gcp-project1 gcp-project2"
 ```
 
+* Remember to give the Service account that runs the cloud functions the role roles/securitycenter.findingsViewer on all projects it should report for. 
+
 ## Requirements
 * Google Cloud SDK (gcloud command-line tool)
 * Python 3
