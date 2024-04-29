@@ -61,7 +61,7 @@ def process_findings(project_ids, ignore_medium_low):
         low_count = severity_count.get(Severity.LOW, 0)
 
         # Skip medium and low severities
-        if args.ignore_medium_low and (severity == Severity.MEDIUM or severity == Severity.LOW) and high_count==0 and critical_count==0:
+        if ignore_medium_low and (severity == Severity.MEDIUM or severity == Severity.LOW) and high_count==0 and critical_count==0:
              continue
         # Format severity summary
         critical = f"C:{critical_count}, "
